@@ -1,7 +1,7 @@
 # Trabajo Práctico N°1
-Integrantes
-1- Demian Micael Soruco
-2- Federico Omar Farfan
-3- Ramiro Ignacio Gutiérrez Quival
-4- Sivila Lucas Santiago
-5- Juan Manuel Viviano Alancay
+Integrantes <br>
+1- Demian Micael Soruco <br>
+2- Federico Omar Farfan <br>
+3- Ramiro Ignacio Gutiérrez Quival <br>
+4- Sivila Lucas Santiago <br>
+5- Juan Manuel Viviano Alancay <br>
