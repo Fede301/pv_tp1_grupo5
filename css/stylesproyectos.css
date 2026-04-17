@@ -12,13 +12,24 @@
 }
 
 nav a {
-  color: var(--text-main);
+  color: var(--bg-app);
   text-decoration: nose;
   transition: color 0.3s ease;
+   display: flex;
+  justify-content: center; 
+  gap: 10px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #1e293b;
 }
 nav a:hover {
   color: var(--color-primary);
   cursor: pointer;
+}
+header {
+  text-align: center;
+  padding: 20px 0;
 }
 body{
   font-family: var(--font-main);
@@ -33,6 +44,10 @@ body{
 
 h1, h2, h3 {
   color: var(--text-main);
+}
+
+h2{
+  justify-content: center; 
 }
 
 p{
