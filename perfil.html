@@ -11,49 +11,51 @@
     <title>Perfil del usuario</title>
 </head>
 <body>
-    <header id="encabezado">
-        <h1>PROYECTOS EDUCATIVOS</h1>
-
-        <nav id="navegacion">
-            <ul id="lista-navegacion">
-                <li class="opcion-lista"><a href="index.html">INICIO</a></li>
-                <li class="opcion-lista"><a href="proyectos.html">PROYECTOS</a></li>
-                <li class="opcion-lista"><a href="detalle.html">DETALLES DE PROYECTOS</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1 style =text-decoration:underline; >PROYECTOS EDUCATIVOS</h1>
+        <h2>Bienvenidos a Gestión de Proyectos Educativos</h2>
     </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
 
-    <h2>Mi Perfil</h2>
-
-    <figure>
+    <main>
+        <h2>Mi Perfil</h2>
+        
+        <figure class="caja-rellena">
             <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png" width="150">
             <figcaption>Usuario: caroZ11</figcaption>
         </figure>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <label for="nombre">Nombre Completo</label>
-            <input type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required><br>
+        <form action="#" method="post">
+            <fieldset class="caja-rellena">
+                <legend class="caja-rellena">Datos Personales</legend>
+                <label for="nombre">Nombre Completo</label>
+                <input class="datos" type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required><br>
+                
+                <label for="rol">Rol</label>
+                <select class="datos" name="rol" id="rol">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                </select>
+            </fieldset>
             
-            <label for="rol">Rol</label>
-            <select name="rol" id="rol">
-                <option value="estudiante">Estudiante</option>
-                <option value="docente">Docente</option>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend>Preferencias de Sistema</legend>
-            <input type="checkbox" id="notificaciones" name="notificaciones" checked>
-            <label for="notificaciones">Recibir notificaciones por correo</label><br>
-        </fieldset>
-    </form>
-
-
-
-    <footer>
-        <p> Programacion visual 2026  -   Facultad de Ingenieria </p>
+            <fieldset class="caja-rellena">
+                <legend class="caja-rellena">Preferencias de Sistema</legend>
+                <input type="checkbox" id="notificaciones" name="notificaciones" checked>
+                <label for="notificaciones">Recibir notificaciones por correo</label><br>
+            </fieldset>
+        </form>
+    </main>
+        
+        
+        
+        <footer>
+        <p> © Programacion visual 2026  -   Facultad de Ingenieria </p>
     </footer>
 </body>
 </html>

@@ -1,18 +1,95 @@
 :root {
   /* Colores Principales */
-  --color-primary: #2563eb;    /* Botones | Cajas*/
-  --color-secondary: #64748b;  /* Texto secundario */
-  --bg-app: #f8fafc;           /* Fondo general */
-  --text-main: #1e293b;        /* Texto principal */
-  
+  --color-primary: #334155;
+  /* Botones | Cajas*/
+  --color-tex-primary: white;
+  --color-secondary: #64748b;
+  --color-efecto: #3b82f6;
+  /* Texto secundario */
+  --fondo-general: #0f172a;
+  /* Fondo general */
   /* Tipografía */
   --font-main: 'Inter', sans-serif;
-  --font-size-base: 16px;
-  --font-weight-bold: 600;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Inter;
+    color: var(--color-tex-primary);
+}
+
+body {
+  background-color: var(--fondo-general);
+}
+
+header{
+  background-color: var(--color-primary);
+  color: var(--color-tex-primary); 
+  text-align: center;
+  padding: 20px;
+}
+
+/* NAV */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: var(--color-primary);
+  margin-top: 10px;
+}
+.menu li {
+  margin: 10px;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family:Georgia;
+}
+.menu a:hover {
+    color: var(--color-efecto);
+}
+
+/* Main */
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.caja-rellena {
+  border: 2px solid var(--color-secondary);
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+}
+
+figure {
+  padding: 10px;
+}
+
+.datos {
+  color: var(--color-tex-primary);
+  background-color: var(--color-primary);
+  padding:2px 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer{
+  background-color: var(--color-primary);
+  color: var(--color-tex-primary); 
+  text-align: center;
+  padding: 0px;
 }
